@@ -15,6 +15,16 @@ In this Project we are going to use the Piano Instrument with the following note
 MAESTRO (MIDI and Audio Edited for Synchronous TRacks and Organization) is a dataset composed of about 200 hours of virtuosic piano performances captured with fine alignment (~3 ms) between note labels and audio waveforms. Tensorflow partnered with organizers of
 the International Piano-e-Competition for the raw data used in this dataset. The dataset contains about 200 hours of paired audio and MIDI recordings from ten years of International Piano-e-Competition. Audio and MIDI files are aligned with ∼3 ms accuracy and sliced to individual musical pieces, which are annotated with composer, title, and year of performance.
 
+### Libraries 
+* Numpy
+* Pandas
+* Tensorflow
+* Matplotlib
+* Seaborn
+* PyFluidSynth
+* FluidSynth
+* Pretty_midi
+
 # Methodology
 
 ### 1. Description of Method
