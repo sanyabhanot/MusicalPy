@@ -55,19 +55,6 @@ We have used 4 types of layers in our model:
 
 Loss is calculated using sparse categorical cross entropy as our outputs belong to a single class and we have more than two classes to work with. Adam optimizer is used as an optimizer to optimize our LSTM. The network is trained using 50 epochs with each batch size of 64. Model checkpoints are used to save the intermediate models and generate output using them.
 
-inputs = tf.keras.Input(input_shape)
-x = tf.keras.layers.LSTM(128)(inputs)
-outputs = { 'pitch': tf.keras.layers.Dense(128, name='pitch')(x),
-'step': tf.keras.layers.Dense(1, name='step')(x),
-'duration': tf.keras.layers.Dense(1, name='duration')(x),
-}
-model = tf.keras.Model(inputs, outputs)
-loss = {'pitch': tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-'step': mse_with_positive_pressure,
-'duration': mse_with_positive_pressure,
-}
-optimizer = tf.keras.optimizers.Adam(learning_rate=learning_rate)
-
 ![image](https://github.com/sanyabhanot/MusicalPy/assets/111521883/265e966e-9afb-4699-9fde-166f6bfae8de)
 
 # Results
