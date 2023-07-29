@@ -18,8 +18,7 @@ the International Piano-e-Competition for the raw data used in this dataset. The
 # Methodology
 
 ### 1. Description of Method
-We are using the LSTM (Long Short Term Memory) network for this project. LSTM is a type of RNN that learns efficiently via gradient descent and they recognize and encode long-term patterns using gating mechanisms. In cases where a network has to remember information for
-a long period of time (like music and text) LSTM is extremely useful.
+We are using the LSTM (Long Short Term Memory) network for this project. LSTM is a type of RNN that learns efficiently via gradient descent and they recognize and encode long-term patterns using gating mechanisms. In cases where a network has to remember information for a long period of time (like music and text) LSTM is extremely useful.
 ![image](https://github.com/sanyabhanot/MusicalPy/assets/111521883/c34c9bf3-49a0-4c0c-82bc-b92973f0a5b8)
 
 ### 2. Data Gathering
@@ -51,6 +50,7 @@ We have used 4 types of layers in our model:
 2. LSTM Layer - 1 layer
 3. Dense Layer -3 layers
 4. Output Layer
+
 ![image](https://github.com/sanyabhanot/MusicalPy/assets/111521883/367938c7-f001-4122-911e-93342b4d64e4)
 
 Loss is calculated using sparse categorical cross entropy as our outputs belong to a single class and we have more than two classes to work with. Adam optimizer is used as an optimizer to optimize our LSTM. The network is trained using 50 epochs with each batch size of 64. Model checkpoints are used to save the intermediate models and generate output using them.
@@ -84,6 +84,7 @@ We plotted the graph between the loss and the epochs to get a closer look at the
 To use the model to generate notes, we first need to provide a starting sequence of notes. For note pitch, it draws a sample from the softmax distribution of notes produced by the model,and does not simply pick the note with the highest probability. Always picking the
 note with the highest probability would lead to repetitive sequences of notes being generated.
 The generated notes function produces a table showing the starting and ending of the three parameters: pitch, step and duration. We can change the temperature and the starting sequence in next_notes to produce different outputs.
+
 ![image](https://github.com/sanyabhanot/MusicalPy/assets/111521883/c2643f41-cb0b-45c6-8838-7c7af1e0920e)
 
 ### Plots and Graphs
