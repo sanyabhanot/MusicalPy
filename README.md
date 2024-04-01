@@ -2,6 +2,11 @@
 
 Over the past several years, deep learning for sequence modeling has grown in popularity. To achieve this goal, LSTM network structures have proven to be very useful for making predictions for the next output in a series. For instance, a smartphone predicting the next word of a text message could use an LSTM. We sought to demonstrate an approach of music generation using Recurrent Neural Networks (RNN). More specifically, a Long Short-Term Memory (LSTM) neural network. Generating music is a notoriously complicated task, whether handmade or generated, as there are a myriad of components involved. Taking this into account, we provide an application of LSTMs in music generation, develop and present the network we found to best achieve this goal, identify and address issues and challenges faced, and include potential future improvements for our network.
 
+<p align="center">
+<img src="https://github.com/sanyabhanot/MusicalPy/assets/111521883/cb07c187-9286-448c-8eeb-d178b283d2e0">
+</p>
+
+
 # Introduction
 
 Machine learning is now being used for many interesting applications in a variety of fields. Music generation is one of the interesting applications of machine learning. As music itself is sequential data, it can be modelled using a sequential machine learning model such as the recurrent neural network. This modelling can help in learning the music sequence and generating the sequence of music data.
